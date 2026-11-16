@@ -208,6 +208,15 @@ const translations = {
     giving_copy_btn: "Copy Link",
     giving_amounts_label: "Fast Seed Shortcuts (Opens Secure Checkout):",
     giving_custom_amount: "Custom Amount",
+    giving_purposes_banner: "For offerings, tithes, thanksgiving, and special donations",
+    giving_opt3_title: "Cash App",
+    giving_opt3_desc: "Send your tithes, offerings, or special seed directly using Cashtag $divineglobalmission.",
+    giving_opt3_btn: "Open Cash App ($divineglobalmission) →",
+    giving_opt3_copy: "Copy Cashtag",
+    giving_opt4_title: "M-Pesa Mobile Money",
+    giving_opt4_desc: "For offerings, tithes, thanksgiving, and special donations via M-Pesa (DRC / International).",
+    giving_opt4_btn: "Dial / Call M-Pesa (+243820008314)",
+    giving_opt4_copy: "Copy Number",
 
     // FAQs
     faq_badge: "Clarity & Direction",
@@ -255,7 +264,97 @@ const translations = {
     prayer_modal_desc: "your prayer request has been received into the secret place. The intercessory watchmen of Divine Connection Ministries Worldwide are carrying your case before the Throne of Grace.",
     prayer_modal_anchor_label: "Prophetic Anchor:",
     prayer_modal_anchor_text: "“It shall come to pass that before they call, I will answer; and while they are still speaking, I will hear.” — Isaiah 65:24",
-    prayer_modal_amen: "Amen & Glory to God"
+    prayer_modal_amen: "Amen & Glory to God",
+
+    // 40-Day Bible Reading Program
+    nav_bible_reading: "Bible Plan",
+    bible_badge: "40-Day Word Consecration",
+    bible_title: "40-Day Bible Reading Program",
+    bible_dates: "November 11 – December 20, 2026",
+    bible_theme_label: "Program Theme:",
+    bible_theme: "“SEEK THE LORD UNTIL YOU ENCOUNTER HIM”",
+    bible_foundations_label: "Scriptural Foundation:",
+    bible_foundations: "Psalm 27:8 • Jeremiah 15:16 • Matthew 4:4 • 1 Peter 2:2",
+
+    // Section 1: Purpose
+    bible_purpose_heading: "1. Purpose of the DE40 Bible Reading Program",
+    bible_purpose_intro1: "During these 40 days of prayer, fasting, intercession and seeking God's presence, we must also give ourselves continually to the Word of God.",
+    bible_purpose_intro2: "Fasting nourishes our spiritual discipline, but the Word of God nourishes our inner man. We cannot grow spiritually without feeding on Scripture.",
+    bible_purpose_subheading: "The purpose of this reading program is to:",
+    bible_purpose_1_title: "Build Our Faith",
+    bible_purpose_1_desc: "Develop an unshakable confidence in God and His promises (Romans 10:17).",
+    bible_purpose_2_title: "Nourish Our Inner Man",
+    bible_purpose_2_desc: "Feed our spirit with the living Word of God (Matthew 4:4).",
+    bible_purpose_3_title: "Develop Intimacy With God",
+    bible_purpose_3_desc: "Learn to know His character, His ways and His heart (Philippians 3:10).",
+    bible_purpose_4_title: "Strengthen Our Spiritual Life",
+    bible_purpose_4_desc: "Become established, rooted and grounded in Christ (Colossians 2:6–7).",
+    bible_purpose_5_title: "Renew Our Minds",
+    bible_purpose_5_desc: "Allow the Word to transform our thinking and conduct (Romans 12:2).",
+    bible_purpose_6_title: "Develop Obedience",
+    bible_purpose_6_desc: "Move beyond hearing the Word to living it (James 1:22).",
+    bible_purpose_7_title: "Prepare for Spiritual Encounters",
+    bible_purpose_7_desc: "Develop a heart that seeks God sincerely and continually (Jeremiah 29:13).",
+    bible_conviction_label: "Our Conviction During DE40",
+    bible_conviction_text: "“We are not merely reading the Bible to complete a 40-day assignment. We are allowing the Word of God to transform us as we seek His face.”",
+
+    // Section 2: Schedule
+    bible_schedule_heading: "2. Daily Bible Reading Schedule",
+    bible_schedule_sub: "Divided into eight spiritual growth dimensions, with five days dedicated to each dimension.",
+    bible_tab_all: "All 40 Days",
+    bible_tab_p1: "Phase 1 (1–5)",
+    bible_tab_p2: "Phase 2 (6–10)",
+    bible_tab_p3: "Phase 3 (11–15)",
+    bible_tab_p4: "Phase 4 (16–20)",
+    bible_tab_p5: "Phase 5 (21–25)",
+    bible_tab_p6: "Phase 6 (26–30)",
+    bible_tab_p7: "Phase 7 (31–35)",
+    bible_tab_p8: "Phase 8 (36–40)",
+    bible_phase_objective_label: "Phase Spiritual Objective:",
+    bible_progress_label: "Bible Consecration Progress:",
+    bible_mark_read: "Mark as Read",
+    bible_marked_read: "Completed ✓",
+    bible_open_gateway: "Read Passages Online",
+
+    // Section 3: DCM Daily Reading Method
+    bible_method_heading: "3. How to Approach Each Day's Bible Reading",
+    bible_method_lead: "Every participant should approach the daily reading with intentionality. Do not read merely to finish the assigned passages. Read to understand, receive, believe and obey.",
+    bible_method_name: "The DCM Daily Reading Method (9 Sacred Steps)",
+
+    // Section 4: Daily Reflection
+    bible_reflection_heading: "4. Daily Personal Reflection",
+    bible_reflection_intro: "At the end of each reading, every participant should be able to answer these eight questions in a personal Bible journal:",
+
+    // Section 5: Our Commitment
+    bible_commitment_heading: "5. Our Commitment During DE40",
+    bible_commitment_lead: "As DCM, let us commit ourselves to being students of the Word, not merely hearers of sermons. Let us not allow these 40 days to become only a season of physical fasting. Let them become a season of spiritual feeding, spiritual growth, transformation and deeper intimacy with God.",
+    bible_remember_title: "Remember Always:",
+    bible_rem_1: "Prayer builds our communion with God.",
+    bible_rem_2: "The Word establishes our faith.",
+    bible_rem_3: "Meditation deepens our understanding.",
+    bible_rem_4: "Obedience demonstrates our love for God.",
+    bible_rem_5: "The Holy Spirit empowers our walk.",
+    bible_rem_6: "Consistency develops spiritual maturity.",
+    bible_key_scriptures_title: "Key Scriptures for Our Commitment",
+    bible_scripture_1: "<strong>Matthew 4:4</strong> – Man shall not live by bread alone, but by every word that proceeds from the mouth of God.",
+    bible_scripture_2: "<strong>Romans 10:17</strong> – So then faith comes by hearing, and hearing by the Word of God.",
+    bible_scripture_3: "<strong>Colossians 3:16</strong> – Let the Word of Christ dwell in you richly in all wisdom.",
+    bible_scripture_4: "<strong>2 Timothy 3:16–17</strong> – All Scripture is inspired by God and equips us for every good work.",
+    bible_scripture_5: "<strong>Acts 20:32</strong> – The Word of His grace is able to build us up and give us an inheritance.",
+    bible_declaration_title: "OUR SOLEMN DECLARATION",
+    bible_declaration_p1: "During these 40 days, I will give attention to the Word of God. I will not be satisfied with superficial knowledge. I will seek to know God, understand His ways, believe His promises and obey His instructions.",
+    bible_declaration_p2: "My inner man will be strengthened. My faith will be established. My mind will be renewed. My character will be transformed. My life will increasingly reflect Jesus Christ.",
+    bible_declaration_p3: "I will not stop seeking Him when DE40 ends. I will continue to pursue His presence all the days of my life.",
+    bible_org_line: "DCM – DIVINE CONNECTION MINISTRIES",
+    bible_tagline: "Revealing Christ. Raising Disciples. Reaching Nations.",
+    bible_motto: "SEEK THE LORD UNTIL YOU ENCOUNTER HIM!",
+
+    // Section 6: Recommendation for Leadership
+    bible_leadership_heading: "6. A Recommendation for DCM Leadership",
+    bible_leadership_p1: "I recommend that every DCM member, prayer leader, moderator and guest minister participate in this reading program.",
+    bible_leadership_p2: "The goal is that, by December 20, we will not simply have completed 40 days of fasting and prayer; we will have become people who are more established in the Word, stronger in faith, deeper in prayer and more committed to Christ.",
+    bible_leadership_p3: "Let the Word become our daily spiritual food throughout DE40.",
+
   },
 
   fr: {
@@ -461,6 +560,15 @@ const translations = {
     giving_copy_btn: "Copier le Lien",
     giving_amounts_label: "Raccourcis de Montants (Paiement Sécurisé) :",
     giving_custom_amount: "Montant Libre",
+    giving_purposes_banner: "Pour les offrandes, les dîmes, les actions de grâce et dons spéciaux",
+    giving_opt3_title: "Cash App",
+    giving_opt3_desc: "Envoyez vos dîmes, offrandes ou semences spéciales directement via le Cashtag $divineglobalmission.",
+    giving_opt3_btn: "Ouvrir Cash App ($divineglobalmission) →",
+    giving_opt3_copy: "Copier le Cashtag",
+    giving_opt4_title: "M-Pesa Mobile Money",
+    giving_opt4_desc: "Pour les offrandes, les dîmes, les actions de grâce et dons spéciaux via M-Pesa (RDC / International).",
+    giving_opt4_btn: "Composer / Appeler M-Pesa (+243820008314)",
+    giving_opt4_copy: "Copier le Numéro",
 
     // FAQs
     faq_badge: "Clarté & Orientation",
@@ -508,7 +616,97 @@ const translations = {
     prayer_modal_desc: "votre sujet de prière a été reçu dans le lieu secret. Les sentinelles d'intercession de Divine Connection Ministries Worldwide portent votre cause devant le Trône de la Grâce.",
     prayer_modal_anchor_label: "Ancre Prophétique :",
     prayer_modal_anchor_text: "« Avant qu'ils ne crient, je répondrai ; ils parleront encore, que j'aurai déjà exaucé. » — Ésaïe 65:24",
-    prayer_modal_amen: "Amen & Gloire à Dieu"
+    prayer_modal_amen: "Amen & Gloire à Dieu",
+
+    // Programme de Lecture Biblique de 40 Jours
+    nav_bible_reading: "Plan Biblique",
+    bible_badge: "Consécration de 40 Jours dans la Parole",
+    bible_title: "Programme de Lecture Biblique de 40 Jours",
+    bible_dates: "11 Novembre – 20 Décembre 2026",
+    bible_theme_label: "Thème du Programme :",
+    bible_theme: "« CHERCHER LE SEIGNEUR JUSQU'À CE QUE VOUS LE RENCONTRIEZ »",
+    bible_foundations_label: "Fondements Scripturaires :",
+    bible_foundations: "Psaume 27:8 • Jérémie 15:16 • Matthieu 4:4 • 1 Pierre 2:2",
+
+    // Section 1: But
+    bible_purpose_heading: "1. But du Programme de Lecture Biblique DE40",
+    bible_purpose_intro1: "Pendant ces 40 jours de prière, de jeûne, d'intercession et de recherche de la présence de Dieu, nous devons également nous consacrer continuellement à la Parole de Dieu.",
+    bible_purpose_intro2: "Le jeûne nourrit notre discipline spirituelle, mais la Parole de Dieu nourrit notre homme intérieur. Nous ne pouvons pas grandir spirituellement sans nous nourrir des Écritures.",
+    bible_purpose_subheading: "L'objectif de ce programme de lecture est de :",
+    bible_purpose_1_title: "Bâtir Notre Foi",
+    bible_purpose_1_desc: "Développer une confiance inébranlable en Dieu et en Ses promesses (Romains 10:17).",
+    bible_purpose_2_title: "Nourrir Notre Homme Intérieur",
+    bible_purpose_2_desc: "Nourrir notre esprit de la Parole vivante de Dieu (Matthieu 4:4).",
+    bible_purpose_3_title: "Développer l'Intimité Avec Dieu",
+    bible_purpose_3_desc: "Apprendre à connaître Son caractère, Ses voies et Son cœur (Philippiens 3:10).",
+    bible_purpose_4_title: "Fortifier Notre Vie Spirituelle",
+    bible_purpose_4_desc: "Être établis, enracinés et fondés en Christ (Colossiens 2:6–7).",
+    bible_purpose_5_title: "Renouveler Nos Pensées",
+    bible_purpose_5_desc: "Laisser la Parole transformer nos pensées et notre conduite (Romains 12:2).",
+    bible_purpose_6_title: "Développer l'Obéissance",
+    bible_purpose_6_desc: "Passer de l'écoute de la Parole à sa mise en pratique active (Jacques 1:22).",
+    bible_purpose_7_title: "Se Préparer aux Rencontres Spirituelles",
+    bible_purpose_7_desc: "Cultiver un cœur qui cherche Dieu sincèrement et continuellement (Jérémie 29:13).",
+    bible_conviction_label: "Notre Conviction Durant DE40",
+    bible_conviction_text: "« Durant DE40, nous ne lisons pas simplement la Bible pour accomplir un devoir de 40 jours. Nous laissons la Parole de Dieu nous transformer à mesure que nous cherchons Sa face. »",
+
+    // Section 2: Calendrier
+    bible_schedule_heading: "2. Calendrier Quotidien de Lecture Biblique",
+    bible_schedule_sub: "Divisé en huit dimensions de croissance spirituelle, avec cinq jours consacrés à chaque dimension.",
+    bible_tab_all: "Les 40 Jours",
+    bible_tab_p1: "Phase 1 (1–5)",
+    bible_tab_p2: "Phase 2 (6–10)",
+    bible_tab_p3: "Phase 3 (11–15)",
+    bible_tab_p4: "Phase 4 (16–20)",
+    bible_tab_p5: "Phase 5 (21–25)",
+    bible_tab_p6: "Phase 6 (26–30)",
+    bible_tab_p7: "Phase 7 (31–35)",
+    bible_tab_p8: "Phase 8 (36–40)",
+    bible_phase_objective_label: "Objectif Spirituel de la Phase :",
+    bible_progress_label: "Progression de Consécration Biblique :",
+    bible_mark_read: "Marquer comme lu",
+    bible_marked_read: "Complété ✓",
+    bible_open_gateway: "Lire les Passages en Ligne",
+
+    // Section 3: Méthode Quotidienne DCM
+    bible_method_heading: "3. Comment Aborder la Lecture Biblique Quotidienne",
+    bible_method_lead: "Chaque participant doit aborder la lecture quotidienne avec intentionnalité. Ne lisez pas simplement pour finir les passages assignés. Lisez pour comprendre, recevoir, croire et obéir.",
+    bible_method_name: "La Méthode Quotidienne de Lecture DCM (9 Étapes Sacrées)",
+
+    // Section 4: Réflexion Quotidienne
+    bible_reflection_heading: "4. Réflexion Personnelle Quotidienne",
+    bible_reflection_intro: "À la fin de chaque lecture, chaque participant doit être capable de répondre à ces huit questions dans un journal biblique personnel :",
+
+    // Section 5: Notre Engagement
+    bible_commitment_heading: "5. Notre Engagement Durant DE40",
+    bible_commitment_lead: "En tant que DCM, engageons-nous à être des étudiants de la Parole, et pas seulement des auditeurs de sermons. Ne laissons pas ces 40 jours devenir uniquement une saison de jeûne physique. Qu'ils deviennent une saison de nourriture spirituelle, de croissance, de transformation et d'intimité plus profonde avec Dieu.",
+    bible_remember_title: "Gardez Toujours à l'Esprit :",
+    bible_rem_1: "La prière bâtit notre communion avec Dieu.",
+    bible_rem_2: "La Parole établit notre foi.",
+    bible_rem_3: "La méditation approfondit notre compréhension.",
+    bible_rem_4: "L'obéissance démontre notre amour pour Dieu.",
+    bible_rem_5: "Le Saint-Esprit rend notre marche victorieuse et puissante.",
+    bible_rem_6: "La constance développe la maturité spirituelle.",
+    bible_key_scriptures_title: "Écritures Clés pour Notre Engagement",
+    bible_scripture_1: "<strong>Matthieu 4:4</strong> – L'homme ne vivra pas de pain seulement, mais de toute parole qui sort de la bouche de Dieu.",
+    bible_scripture_2: "<strong>Romains 10:17</strong> – Ainsi la foi vient de ce qu'on entend, et ce qu'on entend vient de la Parole de Dieu.",
+    bible_scripture_3: "<strong>Colossiens 3:16</strong> – Que la Parole de Christ habite en vous richement en toute sagesse.",
+    bible_scripture_4: "<strong>2 Timothée 3:16–17</strong> – Toute Écriture est inspirée de Dieu et nous rend propres à toute bonne œuvre.",
+    bible_scripture_5: "<strong>Actes 20:32</strong> – La Parole de Sa grâce a la puissance d'édifier et de donner un héritage parmi les sanctifiés.",
+    bible_declaration_title: "NOTRE DÉCLARATION SOLENNELLE",
+    bible_declaration_p1: "Durant ces 40 jours, je prêterai une attention absolue à la Parole de Dieu. Je ne me contenterai pas d'une connaissance superficielle. Je chercherai à connaître Dieu, comprendre Ses voies, croire Ses promesses et obéir à Ses instructions.",
+    bible_declaration_p2: "Mon homme intérieur sera fortifié. Ma foi sera établie. Mes pensées seront renouvelées. Mon caractère sera transformé. Ma vie reflétera de plus en plus Jésus-Christ.",
+    bible_declaration_p3: "Je ne cesserai pas de Le chercher à la fin de DE40. Je continuerai à poursuivre Sa sainte présence tous les jours de ma vie.",
+    bible_org_line: "DCM – DIVINE CONNECTION MINISTRIES",
+    bible_tagline: "Révéler Christ. Former des Disciples. Toucher les Nations.",
+    bible_motto: "CHERCHEZ LE SEIGNEUR JUSQU'À CE QUE VOUS LE RENCONTRIEZ !",
+
+    // Section 6: Recommandation pour le Leadership
+    bible_leadership_heading: "6. Une Recommandation pour le Leadership de DCM",
+    bible_leadership_p1: "Je recommande que chaque membre de DCM, conducteur de prière, modérateur et orateur invité participe activement à ce programme de lecture.",
+    bible_leadership_p2: "L'objectif est que, d'ici le 20 décembre, nous n'ayons pas seulement achevé 40 jours de jeûne et de prière ; mais que nous soyons devenus des hommes et des femmes plus établis dans la Parole, plus forts dans la foi, plus profonds dans la prière et plus consacrés à Christ.",
+    bible_leadership_p3: "Que la Parole devienne notre nourriture spirituelle quotidienne tout au long de DE40.",
+
   }
 };
 
@@ -1075,3 +1273,840 @@ const devotionalData_FR = [
     declaration: "J'ai cherché Dieu et je l'ai rencontré ! Je ne serai plus jamais la même personne. Je pars comme un porteur de Sa gloire, Son feu et Sa puissance pour les nations !"
   }
 ];
+
+
+// ==========================================================================
+// 40-DAY BIBLE READING PROGRAM DATA STRUCTURES
+// ==========================================================================
+
+const biblePhases_EN = [
+  {
+    "phase": 1,
+    "title": "Phase 1: The Word of God – Building a Strong Spiritual Foundation",
+    "range": "Days 1–5 | November 11–15",
+    "objective": "Establish a deep hunger for Scripture and understand why the Word is essential to spiritual growth."
+  },
+  {
+    "phase": 2,
+    "title": "Phase 2: Faith – Developing Unwavering Confidence in God",
+    "range": "Days 6–10 | November 16–20",
+    "objective": "Build a faith that trusts God beyond circumstances, feelings, visible evidence and human understanding."
+  },
+  {
+    "phase": 3,
+    "title": "Phase 3: Knowing God – Developing Intimacy with Him",
+    "range": "Days 11–15 | November 21–25",
+    "objective": "Move beyond knowing about God to personally knowing Him, His character, His ways and His heart."
+  },
+  {
+    "phase": 4,
+    "title": "Phase 4: Repentance, Sanctification and Holiness",
+    "range": "Days 16–20 | November 26–30",
+    "objective": "Examine our hearts, turn away from sin, abandon hypocrisy and pursue a life that pleases God."
+  },
+  {
+    "phase": 5,
+    "title": "Phase 5: Prayer, Intercession and Fellowship with God",
+    "range": "Days 21–25 | December 1–5",
+    "objective": "Develop a consistent prayer life, learn to intercede and grow in communion with the Father."
+  },
+  {
+    "phase": 6,
+    "title": "Phase 6: The Holy Spirit – Walking in His Presence and Power",
+    "range": "Days 26–30 | December 6–10",
+    "objective": "Understand the person and work of the Holy Spirit, learn to walk in His leading and become fruitful in our Christian lives."
+  },
+  {
+    "phase": 7,
+    "title": "Phase 7: Spiritual Maturity, Character and Victorious Living",
+    "range": "Days 31–35 | December 11–15",
+    "objective": "Grow into spiritual maturity, develop Christlike character and stand firm against spiritual opposition."
+  },
+  {
+    "phase": 8,
+    "title": "Phase 8: Purpose, Calling, Service and Finishing Strong",
+    "range": "Days 36–40 | December 16–20",
+    "objective": "Discover and embrace God's purpose, become fruitful in His service and continue walking with Him beyond the 40 days."
+  }
+];
+
+const biblePhases_FR = [
+  {
+    "phase": 1,
+    "title": "Phase 1 : La Parole de Dieu – Bâtir un Fondement Spirituel Solide",
+    "range": "Jours 1–5 | 11–15 Novembre",
+    "objective": "Établir une soif profonde des Écritures et comprendre pourquoi la Parole est essentielle à la croissance spirituelle."
+  },
+  {
+    "phase": 2,
+    "title": "Phase 2 : La Foi – Développer une Confiance Inébranlable en Dieu",
+    "range": "Jours 6–10 | 16–20 Novembre",
+    "objective": "Bâtir une foi qui fait confiance à Dieu au-delà des circonstances, des émotions, des apparences et de l'intelligence humaine."
+  },
+  {
+    "phase": 3,
+    "title": "Phase 3 : Connaître Dieu – Développer une Intimité avec Lui",
+    "range": "Jours 11–15 | 21–25 Novembre",
+    "objective": "Passer de la simple connaissance intellectuelle de Dieu à une intimité personnelle avec Son cœur, Ses voies et Sa personne."
+  },
+  {
+    "phase": 4,
+    "title": "Phase 4 : Repentance, Sanctification et Sainteté",
+    "range": "Jours 16–20 | 26–30 Novembre",
+    "objective": "Sonder nos cœurs, renoncer au péché, abandonner toute hypocrisie et poursuivre une vie agréable à Dieu."
+  },
+  {
+    "phase": 5,
+    "title": "Phase 5 : Prière, Intercession et Communion avec Dieu",
+    "range": "Jours 21–25 | 1er–5 Décembre",
+    "objective": "Développer une vie de prière persévérante, apprendre à intercéder et grandir dans la communion intime avec le Père."
+  },
+  {
+    "phase": 6,
+    "title": "Phase 6 : Le Saint-Esprit – Marcher dans Sa Présence et Sa Puissance",
+    "range": "Jours 26–30 | 6–10 Décembre",
+    "objective": "Comprendre la personne et l'œuvre du Saint-Esprit, apprendre à être conduit par Lui et devenir féconds."
+  },
+  {
+    "phase": 7,
+    "title": "Phase 7 : Maturité Spirituelle, Caractère et Vie Victorieuse",
+    "range": "Jours 31–35 | 11–15 Décembre",
+    "objective": "Grandir vers la maturité spirituelle, revêtir le caractère de Christ et tenir ferme contre toute opposition spirituelle."
+  },
+  {
+    "phase": 8,
+    "title": "Phase 8 : Destinée, Appel, Service et Finir en Force",
+    "range": "Jours 36–40 | 16–20 Décembre",
+    "objective": "Découvrir et accomplir le dessein de Dieu, devenir fécond dans Son service et poursuivre Sa présence au-delà des 40 jours."
+  }
+];
+
+const bibleReadingPlan_EN = [
+  {
+    "day": 1,
+    "phase": 1,
+    "date": "Nov. 11",
+    "theme": "The Word of God: Food for the Inner Man",
+    "reading": "Matthew 4:1–11; Jeremiah 15:16"
+  },
+  {
+    "day": 2,
+    "phase": 1,
+    "date": "Nov. 12",
+    "theme": "The Power of the Word to Transform Us",
+    "reading": "Hebrews 4:12–13; Romans 12:1–2"
+  },
+  {
+    "day": 3,
+    "phase": 1,
+    "date": "Nov. 13",
+    "theme": "Developing a Hunger for God's Word",
+    "reading": "Psalm 119:9–16; 1 Peter 2:1–3"
+  },
+  {
+    "day": 4,
+    "phase": 1,
+    "date": "Nov. 14",
+    "theme": "Meditating on the Word Day and Night",
+    "reading": "Joshua 1:1–9; Psalm 1:1–3"
+  },
+  {
+    "day": 5,
+    "phase": 1,
+    "date": "Nov. 15",
+    "theme": "Becoming Doers of the Word",
+    "reading": "James 1:19–25; Matthew 7:24–27"
+  },
+  {
+    "day": 6,
+    "phase": 2,
+    "date": "Nov. 16",
+    "theme": "Understanding the Foundation of Faith",
+    "reading": "Hebrews 11:1–6; Romans 10:17"
+  },
+  {
+    "day": 7,
+    "phase": 2,
+    "date": "Nov. 17",
+    "theme": "Walking by Faith, Not by Sight",
+    "reading": "2 Corinthians 5:1–10; Habakkuk 2:1–4"
+  },
+  {
+    "day": 8,
+    "phase": 2,
+    "date": "Nov. 18",
+    "theme": "Trusting God When You Do Not Understand",
+    "reading": "Proverbs 3:1–8; Genesis 22:1–18"
+  },
+  {
+    "day": 9,
+    "phase": 2,
+    "date": "Nov. 19",
+    "theme": "The Faithfulness of God and His Promises",
+    "reading": "Numbers 23:19; Hebrews 10:19–23"
+  },
+  {
+    "day": 10,
+    "phase": 2,
+    "date": "Nov. 20",
+    "theme": "Overcoming Fear Through Faith",
+    "reading": "Mark 4:35–41; Isaiah 41:8–13"
+  },
+  {
+    "day": 11,
+    "phase": 3,
+    "date": "Nov. 21",
+    "theme": "Knowing God Personally",
+    "reading": "John 17:1–26; Philippians 3:7–11"
+  },
+  {
+    "day": 12,
+    "phase": 3,
+    "date": "Nov. 22",
+    "theme": "The Desire to Know His Presence",
+    "reading": "Exodus 33:12–23; Psalm 27:1–8"
+  },
+  {
+    "day": 13,
+    "phase": 3,
+    "date": "Nov. 23",
+    "theme": "Seeking God With All Your Heart",
+    "reading": "Jeremiah 29:10–14; Deuteronomy 4:25–31"
+  },
+  {
+    "day": 14,
+    "phase": 3,
+    "date": "Nov. 24",
+    "theme": "Abiding in Christ",
+    "reading": "John 15:1–17; Colossians 3:1–4"
+  },
+  {
+    "day": 15,
+    "phase": 3,
+    "date": "Nov. 25",
+    "theme": "Knowing the Ways of God",
+    "reading": "Psalm 103:1–14; Exodus 34:1–9"
+  },
+  {
+    "day": 16,
+    "phase": 4,
+    "date": "Nov. 26",
+    "theme": "The Call to Genuine Repentance",
+    "reading": "Joel 2:12–17; Psalm 51"
+  },
+  {
+    "day": 17,
+    "phase": 4,
+    "date": "Nov. 27",
+    "theme": "Purifying the Heart and Motives",
+    "reading": "Matthew 5:1–12; Psalm 139:23–24"
+  },
+  {
+    "day": 18,
+    "phase": 4,
+    "date": "Nov. 28",
+    "theme": "The Call to Holiness",
+    "reading": "1 Peter 1:13–25; Leviticus 19:1–18"
+  },
+  {
+    "day": 19,
+    "phase": 4,
+    "date": "Nov. 29",
+    "theme": "Walking in the Spirit and Overcoming the Flesh",
+    "reading": "Galatians 5:13–26; Romans 8:1–14"
+  },
+  {
+    "day": 20,
+    "phase": 4,
+    "date": "Nov. 30",
+    "theme": "Living a Life of Sincerity and Integrity",
+    "reading": "2 Corinthians 6:14–7:1; Ephesians 4:17–32"
+  },
+  {
+    "day": 21,
+    "phase": 5,
+    "date": "Dec. 1",
+    "theme": "Jesus: Our Example in Prayer",
+    "reading": "Luke 5:12–16; Mark 1:32–39"
+  },
+  {
+    "day": 22,
+    "phase": 5,
+    "date": "Dec. 2",
+    "theme": "Learning to Pray According to God's Will",
+    "reading": "Matthew 6:5–15; 1 John 5:13–15"
+  },
+  {
+    "day": 23,
+    "phase": 5,
+    "date": "Dec. 3",
+    "theme": "The Power of Persistent Prayer",
+    "reading": "Luke 11:1–13; Luke 18:1–8"
+  },
+  {
+    "day": 24,
+    "phase": 5,
+    "date": "Dec. 4",
+    "theme": "Standing in the Gap Through Intercession",
+    "reading": "Ezekiel 22:23–31; 1 Timothy 2:1–8"
+  },
+  {
+    "day": 25,
+    "phase": 5,
+    "date": "Dec. 5",
+    "theme": "Praying in the Holy Spirit",
+    "reading": "Romans 8:18–27; Jude 17–25"
+  },
+  {
+    "day": 26,
+    "phase": 6,
+    "date": "Dec. 6",
+    "theme": "Knowing the Person of the Holy Spirit",
+    "reading": "John 14:15–27; John 16:5–15"
+  },
+  {
+    "day": 27,
+    "phase": 6,
+    "date": "Dec. 7",
+    "theme": "Being Filled With the Holy Spirit",
+    "reading": "Acts 1:1–14; Acts 2:1–21"
+  },
+  {
+    "day": 28,
+    "phase": 6,
+    "date": "Dec. 8",
+    "theme": "Being Led by the Holy Spirit",
+    "reading": "Romans 8:1–17; Galatians 5:16–25"
+  },
+  {
+    "day": 29,
+    "phase": 6,
+    "date": "Dec. 9",
+    "theme": "The Gifts of the Holy Spirit",
+    "reading": "1 Corinthians 12:1–31; 1 Corinthians 14:1–19"
+  },
+  {
+    "day": 30,
+    "phase": 6,
+    "date": "Dec. 10",
+    "theme": "The Fruit of the Holy Spirit",
+    "reading": "Galatians 5:16–26; John 15:1–17"
+  },
+  {
+    "day": 31,
+    "phase": 7,
+    "date": "Dec. 11",
+    "theme": "Growing Into Spiritual Maturity",
+    "reading": "Ephesians 4:1–16; Hebrews 5:11–14"
+  },
+  {
+    "day": 32,
+    "phase": 7,
+    "date": "Dec. 12",
+    "theme": "Putting on the Character of Christ",
+    "reading": "Colossians 3:1–17; Philippians 2:1–11"
+  },
+  {
+    "day": 33,
+    "phase": 7,
+    "date": "Dec. 13",
+    "theme": "Overcoming Temptation and Spiritual Opposition",
+    "reading": "Ephesians 6:10–20; James 4:1–10"
+  },
+  {
+    "day": 34,
+    "phase": 7,
+    "date": "Dec. 14",
+    "theme": "Endurance, Patience and Perseverance",
+    "reading": "James 1:1–18; Hebrews 12:1–13"
+  },
+  {
+    "day": 35,
+    "phase": 7,
+    "date": "Dec. 15",
+    "theme": "Living a Life of Gratitude and Worship",
+    "reading": "Psalm 100; 1 Thessalonians 5:16–24; Colossians 3:15–17"
+  },
+  {
+    "day": 36,
+    "phase": 8,
+    "date": "Dec. 16",
+    "theme": "Discovering God's Purpose for Your Life",
+    "reading": "Ephesians 2:1–10; Jeremiah 1:4–10"
+  },
+  {
+    "day": 37,
+    "phase": 8,
+    "date": "Dec. 17",
+    "theme": "Becoming a Vessel of Honour",
+    "reading": "2 Timothy 2:14–26; Romans 12:1–8"
+  },
+  {
+    "day": 38,
+    "phase": 8,
+    "date": "Dec. 18",
+    "theme": "Serving God and Advancing His Kingdom",
+    "reading": "Matthew 28:16–20; Acts 1:1–11"
+  },
+  {
+    "day": 39,
+    "phase": 8,
+    "date": "Dec. 19",
+    "theme": "Bearing Fruit That Remains",
+    "reading": "John 15:1–17; Galatians 6:1–10"
+  },
+  {
+    "day": 40,
+    "phase": 8,
+    "date": "Dec. 20",
+    "theme": "Finishing Strong and Continuing in His Presence",
+    "reading": "Philippians 3:7–21; 2 Timothy 4:1–8"
+  }
+];
+
+const bibleReadingPlan_FR = [
+  {
+    "day": 1,
+    "phase": 1,
+    "date": "11 Nov.",
+    "theme": "La Parole de Dieu : Nourriture pour l'homme intérieur",
+    "reading": "Matthieu 4:1–11 ; Jérémie 15:16"
+  },
+  {
+    "day": 2,
+    "phase": 1,
+    "date": "12 Nov.",
+    "theme": "La Puissance de la Parole pour nous transformer",
+    "reading": "Hébreux 4:12–13 ; Romains 12:1–2"
+  },
+  {
+    "day": 3,
+    "phase": 1,
+    "date": "13 Nov.",
+    "theme": "Développer une soif de la Parole de Dieu",
+    "reading": "Psaume 119:9–16 ; 1 Pierre 2:1–3"
+  },
+  {
+    "day": 4,
+    "phase": 1,
+    "date": "14 Nov.",
+    "theme": "Méditer la Parole jour et nuit",
+    "reading": "Josué 1:1–9 ; Psaume 1:1–3"
+  },
+  {
+    "day": 5,
+    "phase": 1,
+    "date": "15 Nov.",
+    "theme": "Devenir des praticiens de la Parole",
+    "reading": "Jacques 1:19–25 ; Matthieu 7:24–27"
+  },
+  {
+    "day": 6,
+    "phase": 2,
+    "date": "16 Nov.",
+    "theme": "Comprendre le fondement de la foi",
+    "reading": "Hébreux 11:1–6 ; Romains 10:17"
+  },
+  {
+    "day": 7,
+    "phase": 2,
+    "date": "17 Nov.",
+    "theme": "Marcher par la foi et non par la vue",
+    "reading": "2 Corinthiens 5:1–10 ; Habacuc 2:1–4"
+  },
+  {
+    "day": 8,
+    "phase": 2,
+    "date": "18 Nov.",
+    "theme": "Faire confiance à Dieu quand on ne comprend pas",
+    "reading": "Proverbes 3:1–8 ; Genèse 22:1–18"
+  },
+  {
+    "day": 9,
+    "phase": 2,
+    "date": "19 Nov.",
+    "theme": "La fidélité de Dieu et de Ses promesses",
+    "reading": "Nombres 23:19 ; Hébreux 10:19–23"
+  },
+  {
+    "day": 10,
+    "phase": 2,
+    "date": "20 Nov.",
+    "theme": "Surmonter la peur par la foi",
+    "reading": "Marc 4:35–41 ; Ésaïe 41:8–13"
+  },
+  {
+    "day": 11,
+    "phase": 3,
+    "date": "21 Nov.",
+    "theme": "Connaître Dieu personnellement",
+    "reading": "Jean 17:1–26 ; Philippiens 3:7–11"
+  },
+  {
+    "day": 12,
+    "phase": 3,
+    "date": "22 Nov.",
+    "theme": "Le désir ardent de connaître Sa présence",
+    "reading": "Exode 33:12–23 ; Psaume 27:1–8"
+  },
+  {
+    "day": 13,
+    "phase": 3,
+    "date": "23 Nov.",
+    "theme": "Chercher Dieu de tout son cœur",
+    "reading": "Jérémie 29:10–14 ; Deutéronome 4:25–31"
+  },
+  {
+    "day": 14,
+    "phase": 3,
+    "date": "24 Nov.",
+    "theme": "Demeurer en Christ",
+    "reading": "Jean 15:1–17 ; Colossiens 3:1–4"
+  },
+  {
+    "day": 15,
+    "phase": 3,
+    "date": "25 Nov.",
+    "theme": "Connaître les voies de Dieu",
+    "reading": "Psaume 103:1–14 ; Exode 34:1–9"
+  },
+  {
+    "day": 16,
+    "phase": 4,
+    "date": "26 Nov.",
+    "theme": "L'appel à une repentance sincère",
+    "reading": "Joël 2:12–17 ; Psaume 51"
+  },
+  {
+    "day": 17,
+    "phase": 4,
+    "date": "27 Nov.",
+    "theme": "Purifier le cœur et les motivations",
+    "reading": "Matthieu 5:1–12 ; Psaume 139:23–24"
+  },
+  {
+    "day": 18,
+    "phase": 4,
+    "date": "28 Nov.",
+    "theme": "L'appel divin à la sainteté",
+    "reading": "1 Pierre 1:13–25 ; Lévitique 19:1–18"
+  },
+  {
+    "day": 19,
+    "phase": 4,
+    "date": "29 Nov.",
+    "theme": "Marcher selon l'Esprit et vaincre la chair",
+    "reading": "Galates 5:13–26 ; Romains 8:1–14"
+  },
+  {
+    "day": 20,
+    "phase": 4,
+    "date": "30 Nov.",
+    "theme": "Vivre une vie de vérité et d'intégrité",
+    "reading": "2 Corinthiens 6:14–7:1 ; Éphésiens 4:17–32"
+  },
+  {
+    "day": 21,
+    "phase": 5,
+    "date": "1er Déc.",
+    "theme": "Jésus : Notre modèle suprême dans la prière",
+    "reading": "Luc 5:12–16 ; Marc 1:32–39"
+  },
+  {
+    "day": 22,
+    "phase": 5,
+    "date": "2 Déc.",
+    "theme": "Apprendre à prier selon la volonté de Dieu",
+    "reading": "Matthieu 6:5–15 ; 1 Jean 5:13–15"
+  },
+  {
+    "day": 23,
+    "phase": 5,
+    "date": "3 Déc.",
+    "theme": "La puissance de la prière persévérante",
+    "reading": "Luc 11:1–13 ; Luc 18:1–8"
+  },
+  {
+    "day": 24,
+    "phase": 5,
+    "date": "4 Déc.",
+    "theme": "Se tenir sur la brèche par l'intercession",
+    "reading": "Ézéchiel 22:23–31 ; 1 Timothée 2:1–8"
+  },
+  {
+    "day": 25,
+    "phase": 5,
+    "date": "5 Déc.",
+    "theme": "Prier par le Saint-Esprit",
+    "reading": "Romains 8:18–27 ; Jude 17–25"
+  },
+  {
+    "day": 26,
+    "phase": 6,
+    "date": "6 Déc.",
+    "theme": "Connaître la personne du Saint-Esprit",
+    "reading": "Jean 14:15–27 ; Jean 16:5–15"
+  },
+  {
+    "day": 27,
+    "phase": 6,
+    "date": "7 Déc.",
+    "theme": "Être continuellement rempli du Saint-Esprit",
+    "reading": "Actes 1:1–14 ; Actes 2:1–21"
+  },
+  {
+    "day": 28,
+    "phase": 6,
+    "date": "8 Déc.",
+    "theme": "Être conduit par le Saint-Esprit",
+    "reading": "Romains 8:1–17 ; Galates 5:16–25"
+  },
+  {
+    "day": 29,
+    "phase": 6,
+    "date": "9 Déc.",
+    "theme": "Les dons et manifestations du Saint-Esprit",
+    "reading": "1 Corinthiens 12:1–31 ; 1 Corinthiens 14:1–19"
+  },
+  {
+    "day": 30,
+    "phase": 6,
+    "date": "10 Déc.",
+    "theme": "Le fruit de l'Esprit et la vie abondante",
+    "reading": "Galates 5:16–26 ; Jean 15:1–17"
+  },
+  {
+    "day": 31,
+    "phase": 7,
+    "date": "11 Déc.",
+    "theme": "Grandir vers la maturité spirituelle",
+    "reading": "Éphésiens 4:1–16 ; Hébreux 5:11–14"
+  },
+  {
+    "day": 32,
+    "phase": 7,
+    "date": "12 Déc.",
+    "theme": "Revêtir le caractère de Jésus-Christ",
+    "reading": "Colossiens 3:1–17 ; Philippiens 2:1–11"
+  },
+  {
+    "day": 33,
+    "phase": 7,
+    "date": "13 Déc.",
+    "theme": "Vaincre la tentation et l'opposition spirituelle",
+    "reading": "Éphésiens 6:10–20 ; Jacques 4:1–10"
+  },
+  {
+    "day": 34,
+    "phase": 7,
+    "date": "14 Déc.",
+    "theme": "Endurance, patience et persévérance",
+    "reading": "Jacques 1:1–18 ; Hébreux 12:1–13"
+  },
+  {
+    "day": 35,
+    "phase": 7,
+    "date": "15 Déc.",
+    "theme": "Vivre dans la reconnaissance et l'adoration",
+    "reading": "Psaume 100 ; 1 Thessaloniciens 5:16–24 ; Colossiens 3:15–17"
+  },
+  {
+    "day": 36,
+    "phase": 8,
+    "date": "16 Déc.",
+    "theme": "Découvrir le dessein de Dieu pour votre vie",
+    "reading": "Éphésiens 2:1–10 ; Jérémie 1:4–10"
+  },
+  {
+    "day": 37,
+    "phase": 8,
+    "date": "17 Déc.",
+    "theme": "Devenir un vase d'honneur sanctifié",
+    "reading": "2 Timothée 2:14–26 ; Romains 12:1–8"
+  },
+  {
+    "day": 38,
+    "phase": 8,
+    "date": "18 Déc.",
+    "theme": "Servir Dieu et faire avancer Son Royaume",
+    "reading": "Matthieu 28:16–20 ; Actes 1:1–11"
+  },
+  {
+    "day": 39,
+    "phase": 8,
+    "date": "19 Déc.",
+    "theme": "Porter un fruit qui demeure pour l'éternité",
+    "reading": "Jean 15:1–17 ; Galates 6:1–10"
+  },
+  {
+    "day": 40,
+    "phase": 8,
+    "date": "20 Déc.",
+    "theme": "Finir en force et demeurer dans Sa présence",
+    "reading": "Philippiens 3:7–21 ; 2 Timothée 4:1–8"
+  }
+];
+
+const dcmReadingMethod_EN = [
+  {
+    "step": "PRAY",
+    "icon": "🙏",
+    "title": "1. PRAY",
+    "desc": "Prepare your heart. Ask the Holy Spirit to open your understanding and reveal Christ through the Scriptures (Psalm 119:18)."
+  },
+  {
+    "step": "READ",
+    "icon": "📖",
+    "title": "2. READ",
+    "desc": "Give attention to the Scriptures. Read the assigned passages slowly and carefully. Read them more than once where necessary."
+  },
+  {
+    "step": "OBSERVE",
+    "icon": "👁️",
+    "title": "3. OBSERVE",
+    "desc": "What is God saying? Identify the instructions, promises, warnings, examples and truths revealed in the passages."
+  },
+  {
+    "step": "UNDERSTAND",
+    "icon": "💡",
+    "title": "4. UNDERSTAND",
+    "desc": "What does the passage mean? Consider the context, the people involved, what was happening and what God was communicating."
+  },
+  {
+    "step": "MEDITATE",
+    "icon": "🧠",
+    "title": "5. MEDITATE",
+    "desc": "Think deeply about the Word. Reflect on the truth until it becomes established in your heart (Psalm 1:2)."
+  },
+  {
+    "step": "PERSONALIZE",
+    "icon": "❤️",
+    "title": "6. PERSONALIZE",
+    "desc": "What does this mean for my life? Identify what must change in your thoughts, attitudes, decisions and conduct."
+  },
+  {
+    "step": "APPLY",
+    "icon": "⚡",
+    "title": "7. APPLY",
+    "desc": "Put the Word into practice. Identify one practical action you will take in obedience to what you have learned (James 1:22)."
+  },
+  {
+    "step": "PRAY",
+    "icon": "🔥",
+    "title": "8. PRAY",
+    "desc": "Respond to the Word. Turn the Scripture into personal prayer, thanksgiving, confession and intercession."
+  },
+  {
+    "step": "MEMORIZE",
+    "icon": "📜",
+    "title": "9. MEMORIZE",
+    "desc": "Keep the Word in your heart. Select at least one key verse from the day's reading and memorize it."
+  }
+];
+
+const dcmReadingMethod_FR = [
+  {
+    "step": "PRIER",
+    "icon": "🙏",
+    "title": "1. PRIER",
+    "desc": "Préparez votre cœur. Demandez au Saint-Esprit d'ouvrir votre intelligence et de vous révéler Christ à travers les Écritures (Psaume 119:18)."
+  },
+  {
+    "step": "LIRE",
+    "icon": "📖",
+    "title": "2. LIRE",
+    "desc": "Prêtez attention aux Écritures. Lisez les passages attentivement et posément. Relisez-les plusieurs fois si nécessaire."
+  },
+  {
+    "step": "OBSERVER",
+    "icon": "👁️",
+    "title": "3. OBSERVER",
+    "desc": "Que dit Dieu ? Identifiez les instructions, promesses, avertissements, modèles et vérités révélés dans les passages."
+  },
+  {
+    "step": "COMPRENDRE",
+    "icon": "💡",
+    "title": "4. COMPRENDRE",
+    "desc": "Que signifie le texte ? Considérez le contexte, les personnes concernées, la situation et ce que Dieu communiquait."
+  },
+  {
+    "step": "MÉDITER",
+    "icon": "🧠",
+    "title": "5. MÉDITER",
+    "desc": "Réfléchissez profondément à la Parole. Méditez la vérité jusqu'à ce qu'elle s'enracine fermement dans votre cœur (Psaume 1:2)."
+  },
+  {
+    "step": "PERSONNALISER",
+    "icon": "❤️",
+    "title": "6. PERSONNALISER",
+    "desc": "Qu'est-ce que cela signifie pour ma vie ? Identifiez ce qui doit changer dans vos pensées, attitudes, décisions et conduite."
+  },
+  {
+    "step": "APPLIQUER",
+    "icon": "⚡",
+    "title": "7. APPLIQUER",
+    "desc": "Mettez la Parole en pratique. Déterminez une action concrète et immédiate en obéissance à ce que vous avez reçu (Jacques 1:22)."
+  },
+  {
+    "step": "PRIER",
+    "icon": "🔥",
+    "title": "8. PRIER",
+    "desc": "Répondez à la Parole. Transformez les Écritures en prière personnelle, actions de grâce, proclamation et intercession."
+  },
+  {
+    "step": "MÉMORISER",
+    "icon": "📜",
+    "title": "9. MÉMORISER",
+    "desc": "Gardez la Parole dans votre cœur. Retenez et mémorisez au moins un verset clé de la lecture du jour."
+  }
+];
+
+const reflectionQuestions_EN = [
+  "What have I learned about God today?",
+  "What does this passage reveal about Jesus Christ?",
+  "What truth has strengthened my faith?",
+  "Is there something in my life that God is calling me to change?",
+  "What promise can I believe and hold on to?",
+  "What instruction must I obey?",
+  "How will I put this Word into practice today?",
+  "What will I pray about as a result of this reading?"
+];
+
+const reflectionQuestions_FR = [
+  "Qu'ai-je appris au sujet de Dieu aujourd'hui ?",
+  "Que révèle ce passage au sujet de Jésus-Christ ?",
+  "Quelle vérité a fortifié ma foi ?",
+  "Y a-t-il un domaine de ma vie que Dieu m'appelle à transformer ?",
+  "Quelle promesse puis-je saisir et proclamer avec foi ?",
+  "À quelle instruction précise dois-je obéir ?",
+  "Comment vais-je mettre cette Parole en pratique aujourd'hui ?",
+  "Quels sujets de prière découlent de cette lecture ?"
+];
+
+// Expose on window for browser environment
+if (typeof window !== "undefined") {
+  window.biblePhases_EN = biblePhases_EN;
+  window.biblePhases_FR = biblePhases_FR;
+  window.bibleReadingPlan_EN = bibleReadingPlan_EN;
+  window.bibleReadingPlan_FR = bibleReadingPlan_FR;
+  window.dcmReadingMethod_EN = dcmReadingMethod_EN;
+  window.dcmReadingMethod_FR = dcmReadingMethod_FR;
+  window.reflectionQuestions_EN = reflectionQuestions_EN;
+  window.reflectionQuestions_FR = reflectionQuestions_FR;
+}
+
+// Node.js module export for testing
+if (typeof module !== "undefined" && module.exports) {
+  module.exports = {
+    translations,
+    devotionalData_FR,
+    biblePhases_EN,
+    biblePhases_FR,
+    bibleReadingPlan_EN,
+    bibleReadingPlan_FR,
+    dcmReadingMethod_EN,
+    dcmReadingMethod_FR,
+    reflectionQuestions_EN,
+    reflectionQuestions_FR
+  };
+}

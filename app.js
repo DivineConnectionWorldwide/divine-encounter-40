@@ -646,6 +646,11 @@ window.setLanguage = function(lang) {
   // Refresh Tracker
   setupTracker();
 
+  // Refresh Bible Reading Program
+  if (typeof renderBibleReadingPlan === "function") {
+    renderBibleReadingPlan();
+  }
+
   // Audio status text update
   const statusSpan = document.getElementById("audio-status-text");
   if (statusSpan) {
@@ -1099,6 +1104,24 @@ window.copyPayPalMeLink = function() {
   });
 };
 
+window.copyCashApp = function() {
+  const cashtag = "$divineglobalmission";
+  navigator.clipboard.writeText(cashtag).then(() => {
+    showToast(currentLanguage === "fr" ? "Cashtag $divineglobalmission copié !" : "Cashtag $divineglobalmission copied!");
+  }).catch(() => {
+    showToast(cashtag);
+  });
+};
+
+window.copyMpesa = function() {
+  const mpesa = "+243820008314";
+  navigator.clipboard.writeText(mpesa).then(() => {
+    showToast(currentLanguage === "fr" ? "Numéro M-Pesa (+243820008314) copié !" : "M-Pesa number (+243820008314) copied!");
+  }).catch(() => {
+    showToast(mpesa);
+  });
+};
+
 window.printPass = function() {
   window.print();
 };
@@ -1297,3 +1320,204 @@ function setupSmoothScroll() {
     });
   });
 }
+
+
+// ==========================================================================
+// 40-DAY BIBLE READING PROGRAM SYSTEM
+// ==========================================================================
+let currentBiblePhase = 0; // 0 = All 40 Days, 1 to 8 = Phase 1 to Phase 8
+
+window.switchBiblePhase = function(phaseNum) {
+  currentBiblePhase = parseInt(phaseNum, 10);
+  
+  // Update phase tab buttons
+  document.querySelectorAll(".bible-phase-btn").forEach(btn => {
+    const p = parseInt(btn.getAttribute("data-bible-phase"), 10);
+    if (p === currentBiblePhase) {
+      btn.classList.add("active", "border-amber-500/50", "bg-amber-500/20", "text-amber-300", "shadow-md");
+      btn.classList.remove("text-slate-300", "border-white/10");
+    } else {
+      btn.classList.remove("active", "border-amber-500/50", "bg-amber-500/20", "text-amber-300", "shadow-md");
+      btn.classList.add("text-slate-300", "border-white/10");
+    }
+  });
+
+  renderBibleObjectiveBanner();
+  renderBibleSchedule();
+};
+
+function renderBibleObjectiveBanner() {
+  const isFr = currentLanguage === "fr";
+  const titleElem = document.getElementById("bible-phase-title-text");
+  const objElem = document.getElementById("bible-phase-objective-text");
+  if (!titleElem || !objElem) return;
+
+  if (currentBiblePhase === 0) {
+    titleElem.textContent = isFr 
+      ? "Les 40 Jours d'Immersion dans la Parole (Toutes les 8 Phases)" 
+      : "All 40 Days of Word Immersion (All 8 Spiritual Phases)";
+    objElem.textContent = isFr 
+      ? "Consacrez votre homme intérieur chaque jour avec la Parole vivante de Dieu à travers les 8 dimensions spirituelles."
+      : "Consecrate your inner man daily with the living Word of God across all 8 spiritual dimensions.";
+  } else {
+    const phasesList = (isFr && typeof biblePhases_FR !== "undefined") ? biblePhases_FR : (typeof biblePhases_EN !== "undefined" ? biblePhases_EN : []);
+    const phaseData = phasesList.find(p => p.phase === currentBiblePhase);
+    if (phaseData) {
+      titleElem.textContent = phaseData.title + " • (" + phaseData.range + ")";
+      objElem.textContent = (isFr ? "Objectif : " : "Objective: ") + phaseData.objective;
+    }
+  }
+}
+
+function renderBibleSchedule() {
+  const container = document.getElementById("bible-schedule-container");
+  if (!container) return;
+
+  const isFr = currentLanguage === "fr";
+  const planList = (isFr && typeof bibleReadingPlan_FR !== "undefined") ? bibleReadingPlan_FR : (typeof bibleReadingPlan_EN !== "undefined" ? bibleReadingPlan_EN : []);
+  const readDays = JSON.parse(localStorage.getItem("de40_bible_read_days") || "[]");
+
+  // Filter based on selected phase
+  const itemsToRender = currentBiblePhase === 0 
+    ? planList 
+    : planList.filter(item => item.phase === currentBiblePhase);
+
+  container.innerHTML = "";
+
+  itemsToRender.forEach(item => {
+    const isCompleted = readDays.includes(item.day);
+    const dayLabel = isFr ? `Jour ${item.day}` : `Day ${item.day}`;
+    const readBtnText = isCompleted 
+      ? (isFr ? "Complété ✓" : "Completed ✓")
+      : (isFr ? "Marquer comme lu" : "Mark as Read");
+    const openText = isFr ? "Lire le passage" : "Read Passages";
+    const bgBibleVersion = isFr ? "LSG" : "NIV";
+    const bibleGatewayUrl = `https://www.biblegateway.com/passage/?search=${encodeURIComponent(item.reading)}&version=${bgBibleVersion}`;
+
+    const card = document.createElement("div");
+    card.className = `p-4 sm:p-5 rounded-2xl border transition-all flex flex-col justify-between ${
+      isCompleted 
+        ? "bg-amber-500/10 border-amber-500/40 shadow-md shadow-amber-500/5" 
+        : "bg-surface/70 border-white/10 hover:border-amber-500/30"
+    }`;
+
+    card.innerHTML = `
+      <div>
+        <div class="flex items-center justify-between gap-2 mb-2.5">
+          <div class="flex items-center gap-2">
+            <span class="px-2.5 py-0.5 rounded-md text-xs font-bold font-mono ${
+              isCompleted ? "bg-amber-400 text-midnight" : "bg-white/10 text-amber-400"
+            }">${dayLabel}</span>
+            <span class="text-xs font-mono text-slate-400 font-medium">${item.date}</span>
+          </div>
+          <span class="text-[11px] font-semibold uppercase tracking-wider text-purple-400 bg-purple-500/10 border border-purple-500/20 px-2 py-0.5 rounded">
+            Phase ${item.phase}
+          </span>
+        </div>
+        <h4 class="font-cinzel font-bold text-white text-sm sm:text-base mb-2 leading-snug">
+          ${item.theme}
+        </h4>
+        <div class="flex items-center gap-2 text-xs sm:text-sm text-amber-300/90 font-medium bg-midnight/60 px-3 py-2 rounded-xl border border-white/5 mb-4">
+          <span>📖</span>
+          <span class="font-mono text-slate-200">${item.reading}</span>
+        </div>
+      </div>
+      <div class="flex items-center justify-between gap-3 pt-2 border-t border-white/5">
+        <a href="${bibleGatewayUrl}" target="_blank" rel="noopener noreferrer" class="text-xs text-amber-400 hover:text-amber-300 font-semibold flex items-center gap-1 transition-colors" title="${item.reading}">
+          <span>${openText}</span>
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+        <button onclick="toggleBibleDayRead(${item.day})" class="px-3 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 ${
+          isCompleted 
+            ? "bg-amber-400 text-midnight shadow hover:bg-amber-300" 
+            : "bg-surface border border-white/10 hover:border-amber-400 text-slate-300 hover:text-white"
+        }">
+          <svg class="w-3.5 h-3.5 ${isCompleted ? 'text-midnight' : 'text-amber-400'}" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+          <span>${readBtnText}</span>
+        </button>
+      </div>
+    `;
+
+    container.appendChild(card);
+  });
+
+  updateBibleProgressBar();
+}
+
+window.toggleBibleDayRead = function(dayNumber) {
+  let readDays = JSON.parse(localStorage.getItem("de40_bible_read_days") || "[]");
+  if (readDays.includes(dayNumber)) {
+    readDays = readDays.filter(d => d !== dayNumber);
+  } else {
+    readDays.push(dayNumber);
+  }
+  localStorage.setItem("de40_bible_read_days", JSON.stringify(readDays));
+  renderBibleSchedule();
+};
+
+function updateBibleProgressBar() {
+  const readDays = JSON.parse(localStorage.getItem("de40_bible_read_days") || "[]");
+  const count = readDays.length;
+  const percent = Math.min(100, Math.round((count / 40) * 100));
+
+  const barElem = document.getElementById("bible-progress-bar");
+  const countElem = document.getElementById("bible-progress-count");
+
+  if (barElem) {
+    barElem.style.width = `${percent}%`;
+  }
+  if (countElem) {
+    countElem.textContent = `${count} / 40 (${percent}%)`;
+  }
+}
+
+function renderDcmReadingMethod() {
+  const container = document.getElementById("bible-method-container");
+  if (!container) return;
+
+  const isFr = currentLanguage === "fr";
+  const steps = (isFr && typeof dcmReadingMethod_FR !== "undefined") ? dcmReadingMethod_FR : (typeof dcmReadingMethod_EN !== "undefined" ? dcmReadingMethod_EN : []);
+
+  container.innerHTML = "";
+  steps.forEach(st => {
+    const card = document.createElement("div");
+    card.className = "glass-card p-5 rounded-2xl border border-white/10 hover:border-amber-500/30 transition-all flex flex-col";
+    card.innerHTML = `
+      <div class="flex items-center gap-3 mb-3">
+        <span class="text-2xl">${st.icon}</span>
+        <h4 class="font-cinzel font-bold text-amber-300 text-base">${st.title}</h4>
+      </div>
+      <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">${st.desc}</p>
+    `;
+    container.appendChild(card);
+  });
+}
+
+function renderReflectionQuestions() {
+  const container = document.getElementById("bible-questions-container");
+  if (!container) return;
+
+  const isFr = currentLanguage === "fr";
+  const questions = (isFr && typeof reflectionQuestions_FR !== "undefined") ? reflectionQuestions_FR : (typeof reflectionQuestions_EN !== "undefined" ? reflectionQuestions_EN : []);
+
+  container.innerHTML = "";
+  questions.forEach((q, idx) => {
+    const qDiv = document.createElement("div");
+    qDiv.className = "p-3.5 rounded-xl bg-midnight/60 border border-white/10 flex items-start gap-3 hover:border-purple-400/40 transition-colors";
+    qDiv.innerHTML = `
+      <div class="w-6 h-6 rounded-md bg-purple-500/20 text-purple-300 font-bold font-mono text-xs flex items-center justify-center shrink-0 mt-0.5">
+        ${idx + 1}
+      </div>
+      <p class="text-slate-200 text-xs sm:text-sm leading-snug font-medium">${q}</p>
+    `;
+    container.appendChild(qDiv);
+  });
+}
+
+window.renderBibleReadingPlan = function() {
+  renderBibleObjectiveBanner();
+  renderBibleSchedule();
+  renderDcmReadingMethod();
+  renderReflectionQuestions();
+  updateBibleProgressBar();
+};
